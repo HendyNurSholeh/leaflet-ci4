@@ -80,8 +80,10 @@
         // Tambahkan penanda untuk Banjarmasin dan Satui
         var bjm = L.marker([-3.316694, 114.590111]).addTo(map).bindPopup('Banjarmasin<br>CKB Banjarmasin');
         var satui = L.marker([-3.80044, 115.20482]).addTo(map).bindPopup('Tujuan:<br>CKB Satui');
-
         // Tambahkan kontrol rute ke peta
+      L.marker([-3.9, 114.8], {icon: L.icon({iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png', iconSize: [32, 35], iconAnchor: [12, 41]})}).addTo(map).bindPopup('Persinggahan 1').openPopup();
+L.marker([-3.6, 114.7], {icon: L.icon({iconUrl: 'https://cdn-icons-png.flaticon.com/512/684/684908.png', iconSize: [32, 35], iconAnchor: [12, 41]})}).addTo(map).bindPopup('Persinggahan 2').openPopup();
+// Tambahkan kontrol rute ke peta
         L.Routing.control({
             waypoints: [
                 L.latLng(-3.316694, 114.590111), // Banjarmasin (mulai)
@@ -89,6 +91,7 @@
             ],
             routeWhileDragging: true
         }).addTo(map);
+
 
         // Buka popup untuk kedua penanda
         bjm.openPopup();
