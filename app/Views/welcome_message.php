@@ -26,6 +26,41 @@
         </div>
     </div>
 
+    <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize the map and set its view to the specified bounds
+        var map = L.map('map').fitBounds([
+            [-3.316694, 114.590111], // Banjarmasin
+            [-3.80044, 115.20482] // Satui
+        ], {
+            padding: [50, 50]
+        });
+
+        // Add OpenStreetMap tiles to the map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add markers for Banjarmasin and Satui
+        var bjm = L.marker([-3.316694, 114.590111]).addTo(map).bindPopup('Banjarmasin<br>CKB Banjarmasin');
+        var satui = L.marker([-3.80044, 115.20482]).addTo(map).bindPopup('Destination:<br>CKB Satui');
+
+        // Open popups for both markers
+        bjm.openPopup();
+        satui.openPopup();
+
+        // Adjust the map view to ensure both markers are visible
+        map.fitBounds([
+            [-3.316694, 114.590111], // Banjarmasin
+            [-3.80044, 115.20482] // Satui
+        ], {
+            padding: [50, 50],
+            maxZoom: 10 // Set the maximum zoom level to ensure the route is visible
+        });
+    });
+    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Inisialisasi peta dan atur tampilan ke batas yang ditentukan
