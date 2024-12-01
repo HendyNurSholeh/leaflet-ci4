@@ -26,6 +26,7 @@
         </div>
     </div>
 
+
     <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Initialize the map and set its view to the specified bounds
