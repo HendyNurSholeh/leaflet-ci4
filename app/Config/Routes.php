@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/input-location', 'Home::inputLocation');
+$routes->get('/double-input-location', 'Home::doubleInputLocation');

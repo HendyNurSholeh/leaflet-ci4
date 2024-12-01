@@ -13,4 +13,10 @@ class Home extends BaseController
     {
         return view('input-location');
     }
+
+    public function doubleInputLocation(): string
+    {
+        return view('double-input-location');
+    }
+
 }
