@@ -19,7 +19,7 @@
 <body>
 
     <div class="row">
-        <div class="col-12 text-center mb-3">
+        <div class="col-12 text-end">
             <a href="https://www.google.com/maps?q=-3.316694,114.590111" target="_blank" class="btn btn-primary">
                 <i class="fas fa-map-marker-alt"></i> Google Maps
             </a>
@@ -85,6 +85,18 @@
         }).addTo(map);
 
         // Tambahkan penanda untuk Banjarmasin dan Satui
+        var customIcon = L.icon({
+            iconUrl: 'image.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+            shadowSize: [41, 41]
+        });
+
+        L.marker([-3.16694, 114.590111], {
+            icon: customIcon
+        }).addTo(map).bindPopup('Banjarmasin<br>CKB Banjarmasin');
         var bjm = L.marker([-3.316694, 114.590111]).addTo(map).bindPopup('Banjarmasin<br>CKB Banjarmasin');
         var satuiIcon = L.icon({
             iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
